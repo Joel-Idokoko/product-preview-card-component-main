@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Product preview card component</title>
+</head>
+
+<body>
+
+
+
+
+  <div class="wrapper">
+    <div class="box_left">
+      <img class="img" src="images/image-product-desktop.jpg" alt="">
+    </div>
+    <div class="box_right">
+      <p class="p">Perfume</p>
+      <h2 class="h2">Gabrielle Essence Eau De Parfum</h2>
+
+
+      <p class="one"> A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the
+        House of CHANEL.</p>
+      <div class="text">
+        <h2 class="two">
+          $149.99
+        </h2>
+        <div class="three">
+          <p>$169.99</p>
+        </div>
+      </div>
+
+      <div class="button">
+        <a onclick="openPopup()"> <img src="images/icon-cart.svg" alt=""> Add to Cart </a>
+      </div>
+      <div class="popup" id="popup">
+        <i class="fa-solid fa-circle-check"></i>
+        <h2>Thank You!</h2>
+        <p>It has been succesfully added to you cart.Thanks</p>
+        <button type="submit" onclick="closePopup()">Ok</button>
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+  </div>
+
+  <script>
+    let popup = document.getElementById('popup');
+
+    function openPopup() {
+      popup.classList.add("open-popup")
+    }
+    function closePopup() {
+      popup.classList.remove("open-popup")
+    }
+  </script>
+</body>
+
+</html>
